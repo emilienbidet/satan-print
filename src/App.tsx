@@ -5,6 +5,8 @@ import { satanCardsQuestions } from "./data/satan-cards-questions";
 import { TimesUpDocument } from "./documents/timesup/document";
 import { timesup } from "./data/timesup";
 import { Button } from "./components/button";
+import { TimesUp2Document } from "./documents/timesup2/document";
+import { timesup2 } from "./data/timesup2";
 
 interface DocumentConfig {
 	id: string;
@@ -27,6 +29,12 @@ const DOCUMENTS: DocumentConfig[] = [
 		label: "Times Up",
 		component: TimesUpDocument,
 		props: { words: timesup },
+	},
+	{
+		id: "times-up-2",
+		label: "Times Up 2",
+		component: TimesUp2Document,
+		props: { words: timesup2 },
 	},
 ];
 
