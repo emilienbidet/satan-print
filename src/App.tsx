@@ -7,6 +7,8 @@ import { timesup } from "./data/timesup";
 import { Button } from "./components/button";
 import { TimesUp2Document } from "./documents/timesup2/document";
 import { timesup2 } from "./data/timesup2";
+import { TimesUpSexeDocument } from "./documents/timesup-sexe/document";
+import { timesupSexe } from "./data/timesup-sexe";
 
 interface DocumentConfig {
 	id: string;
@@ -35,6 +37,12 @@ const DOCUMENTS: DocumentConfig[] = [
 		label: "Times Up 2",
 		component: TimesUp2Document,
 		props: { words: timesup2 },
+	},
+	{
+		id: "times-up-sexe",
+		label: "Times Up Sexe",
+		component: TimesUpSexeDocument,
+		props: { words: timesupSexe },
 	},
 ];
 
